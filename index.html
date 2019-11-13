@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Disney Survey</title>
+</head>
+<body>
+    <header>
+        <H1 id="title">Disney Vacation Survey</H1>
+        <p id="description">"The way to get started is to quit talking and begin doing"- Walt Disney</p>
+    </header>
+    <form action="" id="survey-form">
+        <label class="label" id="name-label">Name</label><br>
+        <input class="info" id="name" type="text" placeholder="Enter Your Name" required><br>
+        <label class="label" id="email-label">Email</label>    <br>
+        <input class="info" id="email" type="email" placeholder="Enter Your Email" required><br>
+        <label class="label" id="number-label">How many people are in your family</label><br>
+        <input class="info" id="number" type="number" placeholder="Enter the number of people in your family" min="0" max="100">
+
+        
+        
+
+        <figcaption>Which Parks would you like to visit</figcaption>
+        <label for="MagicKingdom">
+            <input type="checkbox" id="MagicKingdom" value="MagicKingdom" name="checkbox">
+            Magic Kingdom
+        </label>
+        <label for="Epcot">
+            <input type="checkbox" id="Epcot" value="Epcot" name="checkbox">
+            Epcot
+        </label>        <br>
+        <label for="AnimalKingdom">
+            <input type="checkbox" id="AnimalKingdom" value="AnimalKingdom" name="checkbox">
+            Animal Kingdom
+        </label>
+        <label for="HollywoodStudios">
+            <input type="checkbox" id="HollywoodStudios" value="HollywoodStudios" name="checkbox">
+            Hollywood
+        </label>
+
+
+
+        <figcaption>Which days would you like to go to the parks</figcaption>
+        <label for="Sunday">
+            <input type="checkbox" id="Sunday" value="Sunday" name="checkbox2">
+            Sunday
+        </label>
+        <label for="Monday">
+            <input type="checkbox" id="Monday" value="Monday" name="checkbox2">
+            Monday
+        </label>        
+        <label for="Tuesday">
+            <input type="checkbox" id="Tuesday" value="Tuesday" name="checkbox2">
+            Tuesday
+        </label><br>
+        <label for="Wednesday">
+            <input type="checkbox" id="Wednesday" value="Wednesday" name="checkbox2">
+            Wednesday
+        </label>
+        <label for="Thursday">
+            <input type="checkbox" id="Thursday" value="Thursday" name="checkbox2">
+            Thursday
+        </label>
+        <label for="Friday">
+            <input type="checkbox" id="Friday" value="Friday" name="checkbox2">
+            Friday
+        </label>
+
+        <figcaption>What would you like to wear</figcaption>
+        <label for="Everyone">
+            <input type="radio" id="Everyone" value="Everyone" name="radio">
+            Everyone Match
+        </label>
+        <label for="EachFam">
+            <input type="radio" id="EachFam" value="EachFam" name="radio">
+            Indiviual Familys Match
+        </label><br>
+        <label for="Noone">
+            <input type="radio" id="Noone" value="Noone" name="radio">
+            I'd rather not match anyone
+        </label> 
+
+        <figcaption>Anything specific you would like to do at the park</figcaption>
+        <textarea name="EventsPark" id="Events" cols="30" rows="10" placeholder="List any rides, shows, resturants, etc.. you would like to go to"></textarea>
+      
+        <figcaption>Thoughts for the off days</figcaption>
+        <select id="dropdown">
+            <option value="" selected>----</option>
+            <option value="">Do something with the whole family</option>
+            <option value="">Indiviual family time</option>
+            <option value="">Both</option>
+        </select>
+
+
+        <figcaption>Anything specific you would enjoy on our off days</figcaption>
+        <textarea name="EventsOff" id="Events" cols="30" rows="10" placeholder="List any activities you would enjoy. Include ideas for the whole family or just yours. We like ideas!"></textarea>
+
+
+        <figcaption>Did you enjoy this survey</figcaption>
+        <select id="dropdown">
+            <option value="" selected>----</option>
+            <option value="">Yes, thank you for the honor of participating</option>
+            <option value="">Meh</option>
+            <option value="">NEVER do this again</option>
+        </select>
+
+
+
+        <figcaption>What is the name of the gas station</figcaption>
+        <label for="Listerhill">
+            <input type="radio" id="Listerhill" value="Listerhill" name="radio">
+            Listerhill Gas Station
+        </label>
+        <label for="Chevron">
+            <input type="radio" id="Chevron" value="Chevron" name="radio">
+            Chevron
+        </label><br>
+        <label for="ImDone">
+            <input type="radio" id="ImDone" value="ImDone" name="radio">
+            I'm done with this
+        </label>  <br>
+
+        <input type="submit" id="submit">
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
